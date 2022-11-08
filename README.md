@@ -8,8 +8,8 @@ brain-even
 
 brain-calc
 
-[![asciicast](https://asciinema.org/connect/71df8a1a-d46b-49e6-9b64-210544d6b3cf.png)](https://asciinema.org/connect/71df8a1a-d46b-49e6-9b64-210544d6b3cf)
+[![asciicast](https://asciinema.org/a/AUV71NPPUXSeIDyM26tsuWweq.png)](https://asciinema.org/a/AUV71NPPUXSeIDyM26tsuWweq)
 
 brain-gcd
 
-[![asciicast](https://asciinema.org/connect/71df8a1a-d46b-49e6-9b64-210544d6b3cf.png)](https://asciinema.org/connect/71df8a1a-d46b-49e6-9b64-210544d6b3cf)
+[![asciicast](https://asciinema.org/a/XgiYpEzETK8TD9qkyj0mQ2XNR.png)](https://asciinema.org/a/XgiYpEzETK8TD9qkyj0mQ2XNR)
