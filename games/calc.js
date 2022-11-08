@@ -12,7 +12,7 @@ const calculator = (num1, num2, operator) => {
     default:
       return false;
   }
-}
+};
 const description = 'What is the result of the expression?';
 
 const getQuestionAndAnswerCorrect = () => {
