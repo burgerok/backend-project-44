@@ -1,7 +1,7 @@
 import getRandom from '../src/getRandom.js';
 import playGame from '../src/index.js';
 
-const description = 'Find the greatest common divisor of given numbers.';
+const description = 'What number is missing in the progression?';
 
 const getQuestionAndAnswerCorrect = () => {
   const progressionLength = getRandom(5, 10);
