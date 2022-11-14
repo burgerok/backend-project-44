@@ -1,5 +1,5 @@
-import getRandom from '../src/getRandom.js';
-import playGame from '../src/index.js';
+import getRandom from '../getRandom.js';
+import playGame from '../index.js';
 
 const calculator = (num1, num2, operator) => {
   switch (operator) {
