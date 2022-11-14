@@ -12,13 +12,12 @@ const playGame = (getQuestionAndAnswerCorrect, description) => {
     const [question, answerCorrect] = getQuestionAndAnswerCorrect();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    if (answer === answerCorrect) {
-      console.log('Correct!');
-    } else {
+    if (answer !== answerCorrect) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${answerCorrect}'.`);
       console.log(`Let's try again, ${userName}!`);
       return;
     }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
 };
