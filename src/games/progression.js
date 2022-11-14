@@ -1,7 +1,7 @@
 import getRandom from '../getRandom.js';
 import playGame from '../index.js';
 
-const generateQuestion = (start, length, step, index) => {
+const getQuestion = (start, length, step, index) => {
   const progression = [];
   progression[0] = start;
   let question = String(progression[0]);
@@ -20,10 +20,9 @@ const getQuestionAndAnswerCorrect = () => {
   const progressionStart = getRandom(1, 10);
   const progressionLength = getRandom(5, 10);
   const progressionStep = getRandom(1, 10);
-  const elementHiddenIndex = getRandom(0, progressionLength - 1);
-  
-  const question = generateQuestion(progressionStart, progressionLength, progressionStep, elementHiddenIndex);
-  const answerCorrect = String(progressionStart + progressionStep * elementHiddenIndex);
+  const hiddenIndex = getRandom(0, progressionLength - 1);
+  const question = getQuestion(progressionStart, progressionLength, progressionStep, hiddenIndex);
+  const answerCorrect = String(progressionStart + progressionStep * hiddenIndex);
   return [question, answerCorrect];
 };
 
