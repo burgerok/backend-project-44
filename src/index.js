@@ -10,11 +10,13 @@ const playGame = (getQuestionAndAnswerCorrect, description) => {
 
   for (let i = 0; i < roundQuantity; i += 1) {
     const [question, answerCorrect] = getQuestionAndAnswerCorrect();
-    const answer = readlineSync.question(`Question: ${question}\nYour answer: `);
+    console.log(`Question: ${question}`);
+    const answer = readlineSync.question(`Your answer: `);
     if (answer === answerCorrect) {
       console.log('Correct!');
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${answerCorrect}'. \nLet's try again, ${userName}!`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${answerCorrect}'.`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
   }
