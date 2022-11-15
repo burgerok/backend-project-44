@@ -3,15 +3,11 @@ import playGame from '../index.js';
 
 const getQuestion = (start, length, step, index) => {
   const progression = [];
-  progression[0] = start;
-  let question = String(progression[0]);
-  if (index === 0) question = '..';
-  for (let i = 1; i < length; i += 1) {
-    progression[i] = progression[i - 1] + step;
-    if (i === index) question = `${question} ..`;
-    else question = `${question} ${progression[i]}`;
+  for (let i = 0; i < length; i += 1) {
+    progression.push(start + (step * i));
   }
-  return question;
+  progression[index] = '..';
+  return progression.join(' ');
 };
 
 const description = 'What number is missing in the progression?';
